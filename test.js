@@ -22,20 +22,17 @@ var str = "";
 // console.log(str.matchs('*如果*就*'));
 
 
-str = "今天不是我的生日, 我是1991-04-01日生的,生日是4月1日";
+// str = "今天不是我的生日, 我是1991-04-01日生的,生日是4月1日";
 
-str = "今天不是我的生日, 我是一九九一年四月一日生的,生日是4月1日";
+// str = "今天不是我的生日, 我是一九九一年四月一日生的,生日是4月1日";
 
 // console.log(str.matchs('{时态}'));
 // console.log(str.matchs('{日期}'));
 
-str = "1991年4月1日,小宝宝诞生了";
-console.log(str.matchs('{年月日}'));
-
+// str = "1991年4月1日,小宝宝诞生了";
+// console.log(str.matchs('{年月日}'));
 
 // console.log(str.matchs('{月日}'));
-// console.log(str.matchs('{星期}'));
-// console.log(str.matchs('{时分秒}'));
 
 // srt = "今天天起怎么样?";
 
@@ -50,5 +47,98 @@ console.log(str.matchs('{年月日}'));
 // str = "现在的时间是19:35:59";
 // console.log(str.matchs('{时间}'));
 
+// console.log(str.matchs('{时分秒}'));
+// console.log(str.matchs('{时分}'));
+
+// str = "星期天去哪玩？";
+// console.log(str.matchs('{星期}'));
+
+// str = "http://www.elins.cn";
+// console.log(str.matchs('{网址}'));
+
+// str = "573242395@qq.com";
+// console.log(str.matchs('{邮箱}'));
+
+// str = "身份证号441423199104018011";
+// console.log(str.matchs('{身份证号}'));
+
+// str = "128.0.1.0";
+// str = "QQ号是573242395";
+// console.log(str.matchs('{QQ}'));
+
+// str = "my name is qww, QQ号是573242395";
+// console.log(str.matchs('{中英文}'));
+
+// str = "我的名字叫文武qww";
+// console.log(str.matchs('{中文或英文}'));
+
+// str = '<img src="   http://www.elins.cn/logo.png " />';
+// console.log(str.matchs('{img标签}'));
+// console.log(str.matchs('{网址}'));
+
+// str = '<a href="http://www.elins.cn/logo.png">123123123</a>';
+// str = `这是一个链接<a href="http://www.elins.cn/logo.png">
+// <div class="test">你好吗？</div>
+// </a>`;
+// console.log(str.matchs('{链接}'));
+
+// console.log(str.matchs('{html标签}'));
+// console.log(str.matchs('{标签之间}'));
+
+// str = "广东省深圳市南山区粤海街道在中国南方";
+// console.log(str.matchs('{省份}'));
+// console.log(str.matchs('{城市}'));
+// console.log(str.matchs('{管辖区}'));
+// console.log(str.matchs('{方位}'));
+
+// str = "我乘坐的车的车牌号是粤B12312";
+// console.log(str.matchs('{车牌号}'));
+
+// str = "圆周率是3.1415926";
+// console.log(str.matchs('{浮点数}'));
+
+// str = "做到了什么程度？";
+// console.log(str.matchs('{疑问}'));
+
+// str = "买了什么东西？";
+// console.log(str.matchs('{疑问}'));
+
+// str = "摸到了什么东西？";
+// console.log(str.matchs('{疑问}'));
+
+// str = "获得了什么东西？";
+// console.log(str.matchs('{疑问}'));
+
+// str = "想到了什么？";
+// console.log(str.matchs('{疑问}'));
+
+// str = "今天天气怎么样？"
+// console.log(str.matchs('{疑问}'));
+
+// str = "听见什么没？";
+// console.log(str.matchs('{疑问}'));
+
+// str = "你到哪里了？";
+// console.log(str.matchs('{疑问}'));
+
+// str = "买到了没？";
+// console.log(str.matchs('{疑问}'));
+
+// str = "紫红色";
+// console.log(str.matchs('{颜色}'));
+
+// str = "朱红色";
+// console.log(str.matchs('{颜色}'));
+
+// str = "大红大紫";
+// console.log(str.matchs('{颜色}'));
 
 
+// str = "年方二八";
+// console.log(str.matchs('{年龄}'));
+
+// str = "28岁了";
+// console.log(str.matchs('{年龄}'));
+
+// str = "十八岁了";
+// console.log(str.matchs('{年龄}'));
