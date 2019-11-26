@@ -24,7 +24,7 @@ var str = "";
 
 // str = "今天不是我的生日, 我是1991-04-01日生的,生日是4月1日";
 
-// str = "今天不是我的生日, 我是一九九一年四月一日生的,生日是4月1日";
+str = "今天不是我的生日, 我是一九九一年四月一日生的,生日是4月1日";
 
 // console.log(str.matchs('{时态}'));
 // console.log(str.matchs('{日期}'));
@@ -34,6 +34,30 @@ var str = "";
 
 // console.log(str.matchs('{月日}'));
 
+// str = "十五天内";
+// console.log(str.matchs('{周期}'));
+
+// str = "10-15天左右";
+// console.log(str.matchs('{周期}'));
+
+// str = "十到十五天内";
+// console.log(str.matchs('{周期}'));
+
+// str = "10至15天内";
+// console.log(str.matchs('{周期}'));
+
+// str = "15号之前";
+// console.log(str.matchs('{周期}'));
+
+
+// str = "数日内";
+// console.log(str.matchs('{周期}'));
+
+// str = "几个小时后";
+// console.log(str.matchs('{周期}'));
+
+// str = "从现在起几个小时之内";
+// console.log(str.matchs('{周期}'));
 // srt = "今天天起怎么样?";
 
 
@@ -90,6 +114,8 @@ var str = "";
 // console.log(str.matchs('{城市}'));
 // console.log(str.matchs('{管辖区}'));
 // console.log(str.matchs('{方位}'));
+// console.log(str.matchs('在*{方位}'));
+// console.log(str.matchs('在{国家}'));
 
 // str = "我乘坐的车的车牌号是粤B12312";
 // console.log(str.matchs('{车牌号}'));
@@ -142,3 +168,4 @@ var str = "";
 
 // str = "十八岁了";
 // console.log(str.matchs('{年龄}'));
+
