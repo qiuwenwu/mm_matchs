@@ -26,8 +26,11 @@ var str = "";
 
 str = "今天不是我的生日, 我是一九九一年四月一日生的,生日是4月1日";
 
-// console.log(str.matchs('{时态}'));
-// console.log(str.matchs('{日期}'));
+console.log(str.matchs('{时态}'));
+console.log(str.matchs('{日期}'));
+
+// str = "1991-04-01 12:15:36";
+// console.log(str.matchs('{日期时间}'));
 
 // str = "1991年4月1日,小宝宝诞生了";
 // console.log(str.matchs('{年月日}'));

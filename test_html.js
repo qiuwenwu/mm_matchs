@@ -1,7 +1,7 @@
 var Html2Article = require('./html.js');
 
 var html =
-	`<main>
+	`<body><main>
             <div class="blog-content-box">
     <div class="article-header-box">
         <div class="article-header">
@@ -2672,9 +2672,8 @@ JavaScript能发展到现在的程度已经经历不少的坎坷，早产带来�
                 <span> 设计师:
                                             设计师姐姐设计师姐姐设计师姐姐设计师姐姐                                    </span>
                 </div>
-                    </main>`
-
+                    </main></body>`
 
 var mh = new Html2Article();
-
 console.log(mh.getArticle(html));
+// console.log(mh.getArticle(html).html);
