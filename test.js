@@ -6,7 +6,9 @@ async function test() {
 }
 
 test();
-var str = "";
+var str = '职位不对';
+// console.log(str.matchs("*{不对}"));
+
 // 正则加g表示匹配多个, 否则只匹配一个
 // console.log("今年28岁了".matchs('/[0-9]+/'));
 // console.log("手机号码是15817188815,哦5646546".matchs('/[0-9]+/g'));
@@ -21,9 +23,15 @@ var str = "";
 // console.log(str.matchs('如果*就*'));
 // console.log(str.matchs('*如果*就*'));
 
+// console.log("酒店厨师长".matchs('{职位}'));
+// console.log("宠物美容师".matchs('{职位}'));
+// console.log("广告设计师".matchs('{职位}'));
+// console.log("游戏设计总监".matchs('{职位}'));
+// console.log("软件开发工程师".matchs('{职位}'));
+// console.log("游戏设计师".matchs('[\u4e00-\u9fa5]{2}{职位}'));
+// console.log("广告设计实习生".matchs('[\u4e00-\u9fa5]{1,2}{职位}'));
 
 // str = "今天不是我的生日, 我是1991-04-01日生的,生日是4月1日";
-
 str = "今天不是我的生日, 我是一九九一年四月一日生的,生日是4月1日";
 
 console.log(str.matchs('{时态}'));
