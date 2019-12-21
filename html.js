@@ -90,7 +90,8 @@ Html2Article.prototype.getArticle = function(html) {
 		}
 		// 过滤样式，脚本等不相干标签
 		var lt = this.filters;
-		for (var i = 0; i < lt.length; i++) {
+		const len = lt.length;
+		for (var i = 0; i < len; i++) {
 			var o = lt[i];
 			var rx = eval(o.rx);
 			body = body.replace(rx, o.value);
@@ -189,7 +190,7 @@ Html2Article.prototype.getContent = function(bodyText) {
 	// 记录文章正文的起始位置
 	var startPos = -1;
 	for (var i = 0; i < lines.length - this.depth; i++) {
-		var len = 0;
+		const len = 0;
 		for (var j = 0; j < this.depth; j++) {
 			len += lines[i + j].length;
 		}

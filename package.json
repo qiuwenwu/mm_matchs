@@ -1,6 +1,6 @@
 {
   "name": "mm_matchs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "这是用来匹配复杂的字符串结构的函数，可以匹配前缀包含、后缀包含、以及时间、地点等",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/qiuwenwu/mm_matchs#readme",
   "dependencies": {
-    "mm_expand": "^1.3.2"
+    "mm_expand": "^1.3.5"
   },
   "devDependencies": {}
 }
