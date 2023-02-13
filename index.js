@@ -37,6 +37,7 @@ class Matchs {
 			"{职位}": "job",
 
 			"{网址}": "url",
+			"{域名}": "web",
 			"{邮箱}": "email",
 			"{账号}": "account",
 			"{强账号}": "account_advanced",
@@ -57,7 +58,6 @@ class Matchs {
 			"{数字}": "digits",
 			"{数值}": "number",
 			"{浮点数}": "float",
-
 
 			"{IP}": "ip",
 			"{QQ}": "qq",
@@ -436,13 +436,24 @@ Matchs.prototype.post_code = function(str, format) {
 };
 
 /**
+ * 匹配{域名}
+ * @param {String} str 匹配的字符串
+ * @param {String} format 匹配格式
+ * @return {String} 返回新的格式
+ */
+Matchs.prototype.web = function(str, format) {
+	var rx = /((https|http|ftp|rtsp|mms)?:\/\/)?[a-zA-Z0-9_\-.]+/;
+	return change(str, format, rx, '{域名}').replace(/((https|http|ftp|rtsp|mms)?:\/\/)?/, "");
+};
+
+/**
  * 匹配{网址}
  * @param {String} str 匹配的字符串
  * @param {String} format 匹配格式
  * @return {String} 返回新的格式
  */
 Matchs.prototype.url = function(str, format) {
-	var rx = /((https|http|ftp|rtsp|mms)?:\/\/)[a-zA-Z0-9/.%&#:?]+/;
+	var rx = /((https|http|ftp|rtsp|mms)?:\/\/)?[a-zA-Z0-9_\-]+\.[/a-zA-Z0-9_\-.]+[/a-zA-Z0-9_\-]+\/?\??([a-zA-Z0-9_\-.=&%]+)?/;
 	return change(str, format, rx, '{网址}');
 };
 
@@ -784,7 +795,7 @@ String.prototype.matchs = function(format) {
 			f = matchs.get(this, format);
 		}
 
-		f = '/' + f.replace(/\//g, '\\/').replace(/\r/g, '\\r').replace(/\n/g, '\\n').replace(/\*/g, '.*') + '/';
+		f = '/' + f.replace(/\//g, '\\/').replace(/\r/g, '\\r').replace(/\n/g, '\\n').replace(/\*/g, '.*').replace(/\?/g, '\\?') + '/';
 
 		try {
 			rx = eval(f);

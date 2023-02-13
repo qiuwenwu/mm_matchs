@@ -31,11 +31,24 @@ var str = '职位不对';
 // console.log("游戏设计师".matchs('[\u4e00-\u9fa5]{2}{职位}'));
 // console.log("广告设计实习生".matchs('[\u4e00-\u9fa5]{1,2}{职位}'));
 
-// str = "今天不是我的生日, 我是1991-04-01日生的,生日是4月1日";
-str = "今天不是我的生日, 我是一九九一年四月一日生的,生日是4月1日";
+// // str = "今天不是我的生日, 我是1991-04-01日生的,生日是4月1日";
+// str = "今天不是我的生日, 我是一九九一年四月一日生的,生日是4月1日";
 
-console.log(str.matchs('{时态}'));
-console.log(str.matchs('{日期}'));
+// console.log(str.matchs('{时态}'));
+// console.log(str.matchs('{日期}'));
+
+// console.log("梅州市丰顺县汤坑镇金溪村150号".matchs('*村'));
+
+// console.log("http://www.baidu.com".matchs('{网址}'));
+// console.log("www.baidu.com".matchs('{网址}'));
+console.log("http://www.baidu.com/?test=demo&keyword=isay中华任命功获".matchs('{网址}'));
+console.log("http://www.baidu.com/ad/city?test=demo&keyword=isay中华任命功获".matchs('{网址}'));
+console.log("http://www.baidu.com/ad/city?".matchs('{网址}'));
+console.log("http://www.baidu.com/ad/city".matchs('{网址}'));
+console.log("http://www.baidu.com/ad/city/".matchs('{网址}'));
+console.log("http://baidu.com/ad/city/img/head.png".matchs('{网址}'));
+console.log("573242395@qq.com".matchs('{网址}'));
+console.log("早上8:00到晚上02:00".matchs('{网址}'));
 
 // str = "1991-04-01 12:15:36";
 // console.log(str.matchs('{日期时间}'));
